@@ -1,2 +1,2 @@
-# sahilp-tech.github.io
+# sptl-tech.github.io
 Personal Site
