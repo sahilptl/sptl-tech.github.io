@@ -1,0 +1,426 @@
+/* Skills Graph Styling */
+
+@media screen and (max-width: 865px) {
+    .wrapper {
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        height: 350px;
+        border: 1px solid #444;
+        border-radius: 2px;
+    }
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+}
+#q-graph {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-family: "fira-sans-2", Verdana, sans-serif;
+    display: inset-block;
+    position: relative;
+    height: 200px;
+    width: 80%;
+    background: transparent;
+    font-size: 11px;
+    margin: auto auto;
+}
+#q-graph caption {
+    caption-side: top;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    top: -40px;
+    position: relative;
+    font-weight: bold;
+}
+#q-graph td {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#q-graph th {
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    width: 275px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0px font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
+}
+#q-graph tr {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#q-graph td {
+    transition: all .3s ease;
+}
+#q-graph thead tr {
+    top: 50%;
+    margin: auto;
+}
+#q-graph thead th {} #q-graph tr {
+    height: 200px;
+    padding-top: 2px;
+    color: #AAA;
+}
+#q-graph #q1 {
+    left: 40px
+}
+#q-graph #q2 {
+    left: 270px;
+}
+#q-graph #q3 {
+    left: 500px;
+}
+#q-graph tbody th {
+    font-weight: normal;
+    color: #333;
+}
+#q-graph .bar {
+    position: absolute;
+    text-align: center;
+	background-size: 200% 200%;
+	background-image: 
+	linear-gradient(to top, #A72424 50%, #3A3A3A 50%);
+	-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;    bottom: 10px;
+    width: 10px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    color: black;
+    border: 1px solid #3A3A3A;
+    z-index: 2;
+}
+#q-graph .bar:hover {
+    z-index: 3;
+    position: absolute;
+	background-image: 
+	linear-gradient(to top, #A72424 51%, #3A3A3A 50%);
+	background-position: 0 100%;
+	-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    border: 1px solid black;
+}
+#q-graph .bar-hovered {
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    z-index: 2;
+    text-align: center;
+    bottom: 10px;
+    width: 10px;
+	background-size: 200% 200%;
+	background-image: 
+	linear-gradient(to top, #A72424 51%, #3A3A3A 50%);
+	background-position: 0 100%;
+	-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    border: 1px solid black;
+}
+#q-graph .bar-hovered p {
+    font-size: 13px;
+    text-align: left;
+    display: inline-block;
+    left: -200%;
+    position: absolute;
+    bottom: -35px;
+    padding: 2px;
+    transition: all .3s ease;
+    color: rgb(216, 19, 19);
+}
+#q-graph .bar-hovered:nth-child(odd) p {
+    bottom: -50px;
+}
+#q-graph .bar-hovered:hover p {
+    text-decoration: underline;
+}
+#q-graph .bar-hovered img {
+    left: -0px;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+}
+#q-graph .bar p {
+    font-size: 12px;
+    text-align: left;
+    display: inline-block;
+    left: -200%;
+    position: absolute;
+    bottom: -35px;
+    padding: 2px;
+    transition: all .3s ease;
+}
+#q-graph .bar:nth-child(odd) p {
+    bottom: -50px;
+}
+#q-graph .bar:hover p {
+    text-decoration: underline;
+    color: rgb(216, 19, 19);
+}
+#q-graph .bar img {
+    left: -0px;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+}
+.ticks {
+    position: relative;
+    top: -200px;
+    left: -55px;
+    width: 675px;
+    height: 200px;
+    z-index: 1;
+    margin: auto;
+    font-size: 10px;
+    font-family: "fira-sans-2", Verdana, sans-serif;
+}
+.tick {
+    position: relative;
+    border-top: 1px dotted #C4C4C4;
+    width: 83%;
+    background: transparent;
+    -webkit-transition: all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    z-index: 3;
+}
+/* Tick content in computer browsers */
+
+@media screen and (min-width: 600px) {
+    .tick .tick-content {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        background-color: transparent;
+        width: 160px;
+        padding: 0;
+        transition: all .5s;
+        z-index: 3;
+        top: 1%;
+        right: -41%;
+        text-align: center;
+    }
+    .tick-content p {
+        text-align: center;
+        background-color: #4A4B4C;
+        color: white;
+        border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        margin: 5px;
+    }
+    .tick:hover {
+        border-top: 1px solid black;
+    }
+}
+@media screen and (max-width: 600px) {
+    .tick .tick-content {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        background-color: transparent;
+        width: 160px;
+        padding: 0;
+        transition: all .5s;
+        z-index: 3;
+        top: 1%;
+        right: -41%;
+        text-align: center;
+    }
+    .tick-content p {
+        visibility: hidden !important;
+        text-align: center;
+        background-color: #4A4B4C;
+        color: white;
+        border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        margin: 5px;
+    }
+    .tick:hover {
+        border-top: 1px solid black !important;
+    }
+}
+.tick:hover .tick-content {
+    visibility: visible;
+    opacity: 0.8;
+    top: 24%;
+    right: -40%;
+    margin-top: -15px;
+    margin-left: 15px;
+    z-index: 999;
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+.tick-content p:after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0;
+    height: 0;
+    border-right: 8px solid #4A4B4C;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+.ticks .tick {
+    width: auto;
+}
+.ticks .tick p {
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    right: 57%;
+    top: -14px;
+    padding: 2px;
+    margin: 0 auto;
+    z-index: 0;
+}
+/* CATEGORIES */
+
+.category {
+    position: relative;
+    height: 10px;
+    z-index: -1;
+}
+#q-graph .front-end {
+    width: 225px;
+    height: 260px;
+    border-radius: 5px;
+    margin: auto;
+    -webkit-transition: all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+}
+#q-graph .front-end:hover {} #q-graph .back-end {
+    width: 225px;
+    height: 260px;
+    border-radius: 5px;
+    margin: auto;
+    -webkit-transition: all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+}
+#q-graph .programming {
+    width: 225px;
+    height: 260px;
+    border-radius: 5px;
+    margin: auto;
+    -webkit-transition: all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+}
+/* Bar Positions */
+
+#q-graph #one {
+    left: 20px;
+}
+#q-graph #two {
+    left: 70px;
+}
+#q-graph #three {
+    left: 120px;
+}
+#q-graph #four {
+    left: 170px;
+}
+#q-graph #five {
+    left: 220px;
+}
+.fluent {
+    height: 190px;
+}
+.competent {
+    height: 140px;
+}
+.familiar {
+    height: 90px;
+}
+.basic {
+    height: 40px;
+}
+/* Bracket */
+
+.item {
+    position: absolute;
+    vertical-align: bottom;
+    width: inherit;
+    margin: auto;
+    display: inset-block;
+    position: absolute;
+    bottom: -35px;
+    padding: 2px;
+}
+.top {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.borders {
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+    height: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.leftcurve {
+    height: 9px;
+    width: 7px;
+    border-top: black solid 2px;
+    border-right: black solid 2px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+}
+.rightcurve {
+    height: 9px;
+    width: 7px;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    border-top-left-radius: 5px;
+    display: inline-block;
+    margin-left: -8px;
+}
+.arrow {
+    background-color: #eee;
+    top: -9px;
+    left: 45%;
+    width: 12px;
+    position: relative;
+    z-index: 50;
+}
